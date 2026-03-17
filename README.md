@@ -1,0 +1,1 @@
+Repositorio focado no estudo basico do fastapi
