@@ -26,3 +26,8 @@ def add_post():
 @app.get("/list")
 def get_posts():
     return listar_posts()
+
+@app.delete("/delete")
+def de():
+    delete_posts()
+    return {"msg": "todos os posts removidos"}
