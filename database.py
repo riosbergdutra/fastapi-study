@@ -69,11 +69,3 @@ def listar_posts():
     return posts
 
 
-def delete_posts():
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute("DELETE FROM posts")
-
-    conn.commit()
-    conn.close()

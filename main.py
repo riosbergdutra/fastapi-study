@@ -22,3 +22,7 @@ def read_root():
 def add_post():
     criar_post("titulo teste", "conteudo teste")
     return {"msg": "post criado"}
+
+@app.get("/list")
+def get_posts():
+    return listar_posts()
