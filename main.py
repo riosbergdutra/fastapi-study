@@ -17,3 +17,8 @@ app = FastAPI(lifespan=lifespan)
 @app.get("/")
 def read_root():
     return {"status": "ok"}
+
+@app.post("/posts")
+def add_post():
+    criar_post("titulo teste", "conteudo teste")
+    return {"msg": "post criado"}
